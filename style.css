@@ -2,13 +2,18 @@
   --pink: #f14e95;
   --bg: #0a0a0a;
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
-  --primary-font: 'sacramento';
+  --primary-font: "sacramento";
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
   font-size: 1.2rem;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   min-height: 4000px;
+  overflow-x: hidden;
 }
 
 .gifts button {
@@ -54,13 +59,13 @@ body {
 
 nav {
   position: fixed;
-  bottom: 20px; 
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%; 
-  max-width: 600px; 
+  width: 90%;
+  max-width: 600px;
   background-color: #ffffff;
-  border-radius: 10px; 
+  border-radius: 10px;
   display: flex;
   justify-content: space-around;
   padding: 10px 0;
@@ -80,13 +85,13 @@ nav a {
 }
 
 nav img {
-  width: 24px; 
+  width: 24px;
   height: 24px;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 nav a:hover img {
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }
 
 .home .sosmed {
@@ -104,34 +109,37 @@ nav a:hover img {
 
 .navbarr {
   --bs-navbar-padding-x: 0;
-      --bs-navbar-padding-y: 0.5rem;
-      --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
-      --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
-      --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
-      --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
-      --bs-navbar-brand-padding-y: 0.3125rem;
-      --bs-navbar-brand-margin-end: 1rem;
-      --bs-navbar-brand-font-size: 1.25rem;
-      --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
-      --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
-      --bs-navbar-nav-link-padding-x: 0.5rem;
-      --bs-navbar-toggler-padding-y: 0.25rem;
-      --bs-navbar-toggler-padding-x: 0.75rem;
-      --bs-navbar-toggler-font-size: 1.25rem;
-      --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
-      --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
-      --bs-navbar-toggler-border-radius: var(--bs-border-radius);
-      --bs-navbar-toggler-focus-width: 0.25rem;
-      --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
-  }
+  --bs-navbar-padding-y: 0.5rem;
+  --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+  --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+  --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+  --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  --bs-navbar-brand-padding-y: 0.3125rem;
+  --bs-navbar-brand-margin-end: 1rem;
+  --bs-navbar-brand-font-size: 1.25rem;
+  --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  --bs-navbar-nav-link-padding-x: 0.5rem;
+  --bs-navbar-toggler-padding-y: 0.25rem;
+  --bs-navbar-toggler-padding-x: 0.75rem;
+  --bs-navbar-toggler-font-size: 1.25rem;
+  --bs-navbar-toggler-icon-bg: url(
+    data:image/svg + xml,
+    %3csvgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 30 30"%3e%3cpathstroke="rgba%2833, 37, 41, 0.75%29"stroke-linecap="round"stroke-miterlimit="10"stroke-width="2"d="M4 7h22M4 15h22M4 23h22"/%3e%3c/svg%3e
+  );
+  --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
+  --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+  --bs-navbar-toggler-focus-width: 0.25rem;
+  --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+}
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -139,7 +147,7 @@ nav a:hover img {
   height: 100%;
   background-image: url();
   background-size: cover;
-  background-position: center;  
+  background-position: center;
   z-index: -1;
   filter: grayscale(1);
 }
@@ -240,9 +248,14 @@ nav a:hover img {
   color: var(--pink);
 }
 
-.home .couple img {
+.home .cowo {
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 1px 1px 1px 40%;
+}
+
+.home .cewe {
+  width: 100%;
+  border-radius: 1px 1px 40% 1px;
 }
 
 .home .heart {
@@ -335,7 +348,7 @@ nav a:hover img {
 }
 
 .timeline::before {
-  content: '';
+  content: "";
   top: 0;
   bottom: 0;
   position: absolute;
@@ -351,7 +364,7 @@ nav a:hover img {
 
 .timeline li::before,
 .timeline li::after {
-  content: '';
+  content: "";
   display: table;
 }
 
@@ -360,9 +373,9 @@ nav a:hover img {
 }
 
 .timeline li .timeline-image {
-  width: 160px;
-  height: 160px;
-  background-color: #ccc;
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -380,30 +393,6 @@ nav a:hover img {
   position: relative;
   border-radius: 8px;
   background-color: #fff;
-}
-
-.timeline li .timeline-panel::before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  border-top: 15px solid transparent;
-  border-left: 15px solid #ccc;
-  border-right: 0 solid #ccc;
-  border-bottom: 15px solid transparent;
-  top: 80px;
-  right: -15px;
-}
-
-.timeline li .timeline-panel::after {
-  content: '';
-  position: absolute;
-  display: inline-block;
-  border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0 solid #fff;
-  border-bottom: 14px solid transparent;
-  top: 81px;
-  right: -13px;
 }
 
 .timeline li.timeline-inverted .timeline-panel {
