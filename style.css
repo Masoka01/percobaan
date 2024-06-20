@@ -275,6 +275,11 @@ nav a:hover img {
   color: var(--pink);
 }
 
+.info .maps:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
+
 .info {
   background-color: var(--bg);
   color: white;
